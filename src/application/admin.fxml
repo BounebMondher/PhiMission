@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Main2Controller">
+   <children>
+      <AnchorPane fx:id="pane2" prefHeight="494.0" prefWidth="780.0" style="-fx-background-color: WHITE;" visible="false">
+         <children>
+            <JFXButton buttonType="RAISED" layoutX="364.0" layoutY="416.0" onAction="#revenir" ripplerFill="BLACK" style="-fx-background-color: #4059a9;" text="revenir" textFill="WHITE" />
+            <Label fx:id="nom1" layoutX="59.0" layoutY="58.0" text="Nom :" textFill="#4059a9">
+               <font>
+                  <Font name="MyriadPro-Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="nom5" layoutX="59.0" layoutY="182.0" text="Date de retour" textFill="#4059a9">
+               <font>
+                  <Font name="MyriadPro-Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="nom4" layoutX="59.0" layoutY="89.0" text="Prenom :" textFill="#4059a9">
+               <font>
+                  <Font name="MyriadPro-Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="nom3" layoutX="59.0" layoutY="121.0" text="Email :" textFill="#4059a9">
+               <font>
+                  <Font name="MyriadPro-Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="nom2" layoutX="59.0" layoutY="154.0" text="Date de départ :" textFill="#4059a9">
+               <font>
+                  <Font name="MyriadPro-Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="nom11" layoutX="59.0" layoutY="213.0" text="Ville :" textFill="#4059a9">
+               <font>
+                  <Font name="MyriadPro-Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="nom51" layoutX="60.0" layoutY="277.0" text="Transport :" textFill="#4059a9">
+               <font>
+                  <Font name="MyriadPro-Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="nom41" layoutX="59.0" layoutY="244.0" text="Pays :" textFill="#4059a9">
+               <font>
+                  <Font name="MyriadPro-Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="nom31" layoutX="59.0" layoutY="306.0" text="Motif :" textFill="#4059a9">
+               <font>
+                  <Font name="MyriadPro-Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="nom21" layoutX="59.0" layoutY="339.0" text="Commentaire :" textFill="#4059a9">
+               <font>
+                  <Font name="MyriadPro-Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="nom1" layoutX="255.0" layoutY="58.0" text="Nom :">
+               <font>
+                  <Font name="MyriadPro-Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="date_retour" layoutX="255.0" layoutY="182.0" text="Date de retour">
+               <font>
+                  <Font name="MyriadPro-Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="prenom1" layoutX="255.0" layoutY="89.0" text="Prenom :">
+               <font>
+                  <Font name="MyriadPro-Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="email" layoutX="255.0" layoutY="121.0" text="Email :">
+               <font>
+                  <Font name="MyriadPro-Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="date_aller1" layoutX="255.0" layoutY="154.0" text="Date de départ :">
+               <font>
+                  <Font name="MyriadPro-Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="ville" layoutX="255.0" layoutY="213.0" text="Ville :">
+               <font>
+                  <Font name="MyriadPro-Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="transport" layoutX="256.0" layoutY="277.0" text="Transport :">
+               <font>
+                  <Font name="MyriadPro-Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="pays" layoutX="255.0" layoutY="244.0" text="Pays :">
+               <font>
+                  <Font name="MyriadPro-Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="motif1" layoutX="255.0" layoutY="306.0" text="Motif :">
+               <font>
+                  <Font name="MyriadPro-Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="commentaire" layoutX="255.0" layoutY="339.0" text="Commentaire :">
+               <font>
+                  <Font name="MyriadPro-Bold" size="14.0" />
+               </font>
+            </Label>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="344.0" layoutX="444.0" layoutY="28.0" stroke="BLACK" strokeType="INSIDE" width="5.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="5.0" layoutX="497.0" layoutY="198.0" stroke="BLACK" strokeType="INSIDE" width="234.0" />
+            <JFXButton buttonType="RAISED" layoutX="568.0" layoutY="123.0" onAction="#accepter" ripplerFill="BLACK" style="-fx-background-color: #4059a9;" text="Accepter" textFill="WHITE" />
+            <JFXButton buttonType="RAISED" layoutX="573.0" layoutY="241.0" onAction="#refuser" ripplerFill="BLACK" style="-fx-background-color: #4059a9;" text="Refuser" textFill="WHITE" />
+            <Text layoutX="631.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Veuillez spécifier les raisons">
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </Text>
+            <Text fill="RED" layoutX="626.0" layoutY="236.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <JFXCheckBox fx:id="budget" layoutX="523.0" layoutY="298.0" text="Budget insuffisante" />
+            <JFXCheckBox fx:id="motive" layoutX="522.0" layoutY="331.0" text="Motif inconvaincant" />
+            <JFXCheckBox fx:id="staff" layoutX="523.0" layoutY="364.0" text="Manque du staff" />
+            <Text fx:id="alert" fill="RED" layoutX="529.0" layoutY="446.0" strokeType="OUTSIDE" strokeWidth="0.0">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="pane1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="494.0" prefWidth="780.0" style="-fx-background-color: WHITE;">
+         <children>
+            <Text fx:id="user" cache="true" fill="#00428f" focusTraversable="true" fontSmoothingType="LCD" layoutX="169.0" layoutY="59.0" stroke="#00bfff" text="utilisateur" textAlignment="RIGHT">
+               <font>
+                  <Font name="MyriadPro-Bold" size="26.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </Text>
+            <Text cache="true" fill="#001d8f" focusTraversable="true" fontSmoothingType="LCD" layoutX="33.0" layoutY="60.0" stroke="BLACK" strokeWidth="0.0" text="Bienvenue" textAlignment="RIGHT">
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </Text>
+            <Text fx:id="nbmission" cache="true" fill="#001d8f" focusTraversable="true" fontSmoothingType="LCD" layoutX="33.0" layoutY="102.0" stroke="BLACK" strokeWidth="0.0" text="Vous avez n demandes de mission" textAlignment="RIGHT">
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </Text>
+            <TableView fx:id="table" layoutX="111.0" layoutY="146.0" prefHeight="235.0" prefWidth="569.0">
+              <columns>
+                <TableColumn fx:id="nom" prefWidth="93.0" text="Nom" />
+                <TableColumn fx:id="prenom" minWidth="0.0" prefWidth="117.0" text="Prenom" />
+                  <TableColumn fx:id="date_aller" prefWidth="113.0" text="Date de depart" />
+                  <TableColumn fx:id="motif" prefWidth="243.0" text="Motif" />
+              </columns>
+            </TableView>
+            <JFXButton buttonType="RAISED" layoutX="328.0" layoutY="414.0" onAction="#explorer" ripplerFill="BLACK" style="-fx-background-color: #4059a9;" text="Explorer la demande" textFill="WHITE" />
+            <Button layoutX="665.0" layoutY="53.0" mnemonicParsing="false" onAction="#actualiser" text="Actualiser" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

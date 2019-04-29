@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="665.0" prefWidth="763.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <content>
+      <Pane prefHeight="656.0" prefWidth="758.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <Label fx:id="nom" layoutX="10.0" layoutY="134.0" text="Nom">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="255.0" layoutY="134.0" text="Prenom" textFill="#030303">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="245.0" prefHeight="20.0" prefWidth="100.0" text="Date de départ" textFill="#0d0d0d">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="501.0" layoutY="246.0" prefHeight="20.0" prefWidth="100.0" text="Date de retour" textFill="#0a0a0a">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="8.0" layoutY="456.0" text="Motif de la mission">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="12.0" layoutY="355.0" text="Ville" textFill="#262828">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="262.0" layoutY="355.0" text="Pays" textFill="#171717">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="510.0" layoutY="357.0" text="Moyen de transport" textFill="#101111">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="440.0" layoutY="456.0" text="Commentaire sur le transport" textFill="#141414">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Text layoutX="509.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email" wrappingWidth="30.32421875" />
+            <JFXTextField fx:id="Nom" editable="false" layoutX="14.0" layoutY="154.0" promptText="nom" />
+            <JFXTextField fx:id="Prenom" editable="false" layoutX="252.0" layoutY="154.0" promptText="prenom" />
+            <JFXTextField fx:id="Email" editable="false" layoutX="496.0" layoutY="154.0" promptText="employee@email.com" />
+            <JFXDatePicker fx:id="date_aller" defaultColor="#000b8f" layoutX="14.0" layoutY="265.0" prefHeight="28.0" prefWidth="240.0" promptText="postérieure à la date du jour" />
+            <JFXDatePicker fx:id="date_retour" defaultColor="#001d8f" layoutX="496.0" layoutY="265.0" prefHeight="28.0" prefWidth="231.0" promptText="au moins égale à la date de départ" />
+            <JFXTextArea fx:id="motif" layoutX="12.0" layoutY="478.0" prefHeight="70.0" prefWidth="320.0" promptText="formation , séminaire, concours..." />
+            <JFXTextField fx:id="ville" layoutX="12.0" layoutY="378.0" prefHeight="25.0" prefWidth="180.0" promptText="Saisissez la ville de destination" />
+            <JFXTextField fx:id="pays" layoutX="263.0" layoutY="378.0" promptText="Saisissez le pays de destination" />
+            <JFXComboBox fx:id="transport" layoutX="499.0" layoutY="378.0" prefHeight="25.0" prefWidth="128.0" />
+            <JFXTextArea fx:id="commentaire" layoutX="437.0" layoutY="480.0" prefHeight="66.0" prefWidth="301.0" promptText="Précisez si vous covoiturez avec un collègue…" />
+            <ImageView fitHeight="97.0" fitWidth="136.0" layoutX="633.0" layoutY="-10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@viewlogo%20(3).png" />
+               </image>
+            </ImageView>
+            <Text cache="true" fill="#001d8f" focusTraversable="true" fontSmoothingType="LCD" layoutX="231.0" layoutY="49.0" stroke="BLACK" strokeWidth="0.0" text="Demande de mission" textAlignment="RIGHT">
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </Text>
+            <JFXButton layoutX="277.0" layoutY="583.0" onAction="#redir2" style="-fx-background-color: #4059a9;" text="Soumettre ma demande de mission" textFill="WHITE" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#24477832" height="15.0" layoutX="-4.0" layoutY="321.0" stroke="TRANSPARENT" strokeType="INSIDE" width="769.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#22437832" height="15.0" layoutX="-5.0" layoutY="105.0" stroke="TRANSPARENT" strokeType="INSIDE" width="771.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2447782a" height="15.0" layoutX="-4.0" layoutY="427.0" stroke="TRANSPARENT" strokeType="INSIDE" width="769.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#22437832" height="15.0" layoutX="-4.0" layoutY="204.0" stroke="TRANSPARENT" strokeType="INSIDE" width="769.0" />
+            <Text fx:id="user" cache="true" fill="#00428f" focusTraversable="true" fontSmoothingType="LCD" layoutX="7.0" layoutY="81.0" stroke="#00bfff" text="utilisateur" textAlignment="RIGHT">
+               <font>
+                  <Font name="MyriadPro-Bold" size="26.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </Text>
+            <Label fx:id="alert" layoutX="277.0" layoutY="616.0" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </content>
+</ScrollPane>

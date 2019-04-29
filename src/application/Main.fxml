@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="511.0" prefWidth="791.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <children>
+      <Accordion layoutX="176.0" layoutY="89.0" />
+      <Accordion layoutX="271.0" layoutY="155.0" />
+      <TextArea editable="false" layoutX="236.0" layoutY="178.0" prefHeight="70.0" prefWidth="437.0" style="-fx-border-color: #001d8f;" text="Je saisis les informations concernant ma mission &#10;(dates, motifs, destination, moyen de transport ...)">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <opaqueInsets>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </opaqueInsets>
+         <cursor>
+            <Cursor fx:constant="SW_RESIZE" />
+         </cursor>
+      </TextArea>
+      <TextArea editable="false" layoutX="236.0" layoutY="261.0" prefHeight="70.0" prefWidth="437.0" style="-fx-border-color: #001d8f;" text="Ma mission est en cours de validation, je peux&#10;suivre son état d'avancement ">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <opaqueInsets>
+            <Insets right="50.0" top="10.0" />
+         </opaqueInsets>
+      </TextArea>
+      <TextArea editable="false" layoutX="236.0" layoutY="344.0" prefHeight="70.0" prefWidth="437.0" promptText="3" style="-fx-border-color: #001d8f;" text="Si ma mission est acceptée, je reçois mon ordre&#10; de mission par e-mail">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextArea>
+      <ImageView fitHeight="97.0" fitWidth="136.0" layoutX="643.0" layoutY="-10.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@viewlogo%20(3).png" />
+         </image>
+      </ImageView>
+      <Text cache="true" fill="#001d8f" focusTraversable="true" fontSmoothingType="LCD" layoutX="27.0" layoutY="115.0" stroke="BLACK" strokeWidth="0.0" text="Voici comment effectuer demande de mission" textAlignment="RIGHT">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Text>
+      <Text layoutX="56.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*Les demandes doivent etre saisies une semaine avant le départ" textAlignment="CENTER" wrappingWidth="684.716796875">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#001d8f" layoutX="203.0" layoutY="225.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-blend-mode: MULTIPLY;" text="1">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Text>
+      <Text fill="#001d8f" layoutX="203.0" layoutY="310.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Text>
+      <Text fill="#001d8f" layoutX="203.0" layoutY="381.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Text>
+      <JFXButton layoutX="334.0" layoutY="449.0" onAction="#redir" style="-fx-background-color: #4059a9;" text="Demande de mission" textFill="WHITE" />
+      <ImageView fitHeight="119.0" fitWidth="123.0" layoutX="27.0" layoutY="237.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@traveler%20(1).png" />
+         </image>
+      </ImageView>
+      <Text fx:id="user" cache="true" fill="#00428f" focusTraversable="true" fontSmoothingType="LCD" layoutX="159.0" layoutY="63.0" stroke="#00bfff" text="utilisateur" textAlignment="RIGHT">
+         <font>
+            <Font name="MyriadPro-Bold" size="26.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Text>
+      <Text cache="true" fill="#001d8f" focusTraversable="true" fontSmoothingType="LCD" layoutX="23.0" layoutY="64.0" stroke="BLACK" strokeWidth="0.0" text="Bienvenue" textAlignment="RIGHT">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Text>
+   </children>
+</AnchorPane>
